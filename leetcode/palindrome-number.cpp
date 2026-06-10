@@ -1,5 +1,5 @@
 #include <iostream>
-// pizdec i ystal eto reshat.... 02:15
+// i ystal eto reshat.... 02:15
 class Solution {
 	public:
 	bool isPalindrome(int x){
