@@ -1,5 +1,5 @@
 #include <iostream>
-// i ystal eto reshat.... 02:15
+
 class Solution {
 	public:
 	bool isPalindrome(int x){
