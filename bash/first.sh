@@ -28,11 +28,4 @@ elif [ "$answer" = "no"] || [ "$answer" = "n" ]; then
 	is_work=true
 	echo "Операция отменена"
 	exit 0
-else 
-
-	echo "введите yes/y или no/n"
-	exit 1
-fi
-
-done
 
