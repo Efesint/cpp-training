@@ -13,29 +13,28 @@
        double area()
        {
          double square = width*height;
-	  std::cout << std::endl;
-	  return square;
+	     return square;
        }
 
        double perm()
        {
          double perimetr = 2*(width+height);
-	 return perimetr;
+	     return perimetr;
        }
 
        void scale(double factor)
         {
           width*=factor;
-	  height*=factor;
+	      height*=factor;
 	}
 
 	void print_info()
 	{
          std::cout << "width = " << width << std::endl;
-	 std::cout << "height = " << height << std::endl;
-	 std::cout << "Площадь равна " << area() << " ";
-	 std::cout << std::endl;
-	 std::cout << "Периметр равен " << perm() << " ";
+	     std::cout << "height = " << height << std::endl;
+	     std::cout << "Площадь равна " << area() << " ";
+	     std::cout << std::endl;
+	     std::cout << "Периметр равен " << perm() << " ";
          std::cout << std::endl;	 
             
 	}
