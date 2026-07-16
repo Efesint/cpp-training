@@ -7,7 +7,7 @@
 	  {
              name = n;
 	  }
-	void speak()
+      virtual void speak()
 	 {
            std::cout << "Животное издаёт звук" << std::endl;
 	 }
@@ -30,6 +30,12 @@
         {
    
         }
+
+     void speak() override
+      {
+         std::cout << "SPEAK D" << std::endl;
+      } 
+
      void wag_tail() 
        {
          std::cout << " sobak hvost" << std::endl;
@@ -51,14 +57,15 @@
 
 int main()
 {
-Cat c("k");
+Animal a("k");
 Dog d("kek");
-d.speak();
-d.wag_tail();
-std::cout << std::endl;
+Animal* animals[2];
+animals[0] = &d;
+animals[1] = &a;
 
-c.speak();
-c.wag_tail();
+animals[1]->speak();
+std::cout << std::endl;
+animals[0]->speak();
 
 return 0;
 }
