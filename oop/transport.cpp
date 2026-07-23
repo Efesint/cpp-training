@@ -66,5 +66,11 @@ arr[2] = new Plane();
       arr[i]->move();
    }
 
+for(int j = 0; j < 3; ++j)
+   {
+     delete arr[j];
+     arr[j] = nullptr;
+   }
+
 return 0;
 }
